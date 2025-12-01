@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Blog | Devansh Tripathi | Data Science & ML Insights</title>
+    <meta name="description"
+        content="Read my thoughts on data science, machine learning, Python, and tech. Tutorials, insights, and project walkthroughs.">
+    <meta name="keywords" content="data science blog, machine learning tutorials, python tips, AI insights, tech blog">
+    <meta name="author" content="Devansh Tripathi">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">DT</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero" style="padding-top: 120px; padding-bottom: 60px;">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Blog</h1>
+                <p class="section-subtitle">Thoughts on Data Science, ML, and Tech</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="container">
+            <div id="blog-posts-container" class="blog-grid">
+                <!-- Blog posts will be loaded here dynamically -->
+
+                <!-- Sample Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-date">December 1, 2024</div>
+                    <h3>Getting Started with Data Science</h3>
+                    <p>My journey into data science and the essential tools, resources, and mindset that helped me along
+                        the way. From Python basics to machine learning fundamentals.</p>
+                    <div class="blog-tags">
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Beginner</span>
+                    </div>
+                    <a href="blog/getting-started-with-data-science.html" class="blog-link">Read More →</a>
+                </article>
+
+                <!-- Sample Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-date">Coming Soon</div>
+                    <h3>5 Python Libraries Every Data Scientist Should Know</h3>
+                    <p>A comprehensive guide to the most essential Python libraries for data science work, including
+                        Pandas, NumPy, Scikit-learn, and more.</p>
+                    <div class="blog-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Libraries</span>
+                        <span class="skill-tag">Tools</span>
+                    </div>
+                    <a href="#" class="blog-link">Coming Soon</a>
+                </article>
+
+                <!-- Sample Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-date">Coming Soon</div>
+                    <h3>Building My First ML Model</h3>
+                    <p>A walkthrough of building my first machine learning model from scratch, including data
+                        preprocessing, model selection, and evaluation.</p>
+                    <div class="blog-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Tutorial</span>
+                        <span class="skill-tag">Project</span>
+                    </div>
+                    <a href="#" class="blog-link">Coming Soon</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Add Blog Posts -->
+    <section class="blog-guide" style="background: var(--bg-darker); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📝 How to Add New Blog Posts</h2>
+            </div>
+            <div class="about-text" style="max-width: 800px; margin: 0 auto;">
+                <h3>Simple Markdown-Based Blogging</h3>
+                <p>Adding a new blog post is super easy! Just follow these steps:</p>
+
+                <div class="education-item">
+                    <h4>Step 1: Create a Markdown File</h4>
+                    <p>Create a new file in <code>blog/posts/</code> with the format: <code>YYYY-MM-DD-title.md</code>
+                    </p>
+                    <p>Example: <code>2024-12-01-my-first-post.md</code></p>
+                </div>
+
+                <div class="education-item">
+                    <h4>Step 2: Add Frontmatter</h4>
+                    <p>Start your markdown file with frontmatter (metadata):</p>
+                    <pre style="background: var(--bg-card); padding: 1rem; border-radius: 0.5rem; overflow-x: auto;">---
+title: "My First Blog Post"
+date: "2024-12-01"
+tags: ["data-science", "python"]
+description: "A short description for SEO"
+---</pre>
+                </div>
+
+                <div class="education-item">
+                    <h4>Step 3: Write Your Content</h4>
+                    <p>Write your blog post in markdown below the frontmatter. Use headings, lists, code blocks, and
+                        more!</p>
+                </div>
+
+                <div class="education-item">
+                    <h4>Step 4: Commit & Push</h4>
+                    <p>Commit your new markdown file to GitHub, and it will automatically appear on your blog!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Devansh Tripathi. Built with ❤️ and lots of ☕</p>
+                <div class="footer-links">
+                    <a href="https://github.com/zetroretron" target="_blank">GitHub</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
